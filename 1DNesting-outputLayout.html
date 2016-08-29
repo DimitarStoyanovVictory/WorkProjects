@@ -1,0 +1,26 @@
+﻿<div id="resultCalculations">
+    <table>
+        <tr>
+            <td>Bar Quantity: ${barQuantity}</td>
+            <td>Bar Length (mm): ${barLength}</td>
+            <td>Bar Waste (mm): ${barWaste}</td>
+            <td>Combination used: ${combinationUsed}</td>
+        </tr>
+        <tr>
+            <td>Parts ID</td>
+            <td>Cut Length (mm)</td>
+            <td>Quantity</td>
+            <td>Qunatity total</td> 
+        </tr>
+            {{each ${cuttedBars} }}
+            <tr>
+                <td>${cuttedBars.partId}</td>
+                <td>${cuttedBars.cutLength}</td>
+                <td>${cuttedBars.quantity}</td>
+                <td>${cuttedBars.quantityTotal}</td>
+            </tr>
+            {{/each}}
+        <br/>
+    </table>
+</div>
+

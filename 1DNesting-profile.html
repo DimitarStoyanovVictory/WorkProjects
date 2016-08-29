@@ -1,0 +1,71 @@
+﻿<div>
+    <ul id="MainCodes1455900947076_expor_toolbar" class="ui-iggrid-export-toobar">
+        <li class="ui-state-default" export-type="xls" title="Export xls"><span class="ui-icon ui-icon-export-xls"></span></li>
+        <li class="ui-state-default" export-type="pdf" title="Export pdf"><span class="ui-icon ui-icon-export-pdf"></span></li>
+    </ul>
+</div>
+<div class="ui-profile-tabs">
+    <ul>
+        <li><a tab="1"><span i18n="General"></span></a></li>
+        <li><a tab="2"><span i18n="Input bars"></span></a></li>
+        <li><a tab="3"><span i18n="Desired bars"></span></a></li>
+        <li><a tab="4" id="outputTrigger"><span i18n="Output"></span></a></li>
+    </ul>
+    <div tab-fragment="1">
+        <div style="margin: 10px 0;">
+            <table class="content_table">
+                <tr>
+                    <td>
+                        <a id="deriveNew" class="button-deriveNew"><span i18n="Duplicate"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span i18n="MainCode"></span></td>
+                    <td>${mainCodeName}</td>
+                </tr>
+                <tr>
+                    <td><span i18n="Code"></span></td>
+                    <td>${codeName}</td>
+                </tr>
+                <tr>
+                    <td><span i18n="Subcode"></span></td>
+                    <td>${subcodeName}</td>
+                </tr>
+                <tr>
+                    <td><span i18n="Name"></span></td>
+                    <td>${name}</td>
+                </tr>
+                <tr>
+                    <td><span i18n="Description"></span></td>
+                    <td>${description}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div tab-fragment="2">
+        <h4>Project:</h4>
+        <p>${number}</p>
+        <h4><span i18n="Bar ends trim (mm):"></span></h4>
+        <input id="comboBarEndsTrim"/>
+        <br/>
+        <h4><span i18n="Cut thickness (mm):"></span></h4>
+        <input id="comboCutThickness"/>
+        <br/>
+        <h4><span i18n="Grip bar partion (mm):"></span></h4>
+        <input id="comboGripBarPartion"/>
+        <br/>
+        <div class="ui-iggrid-addrow-visible">
+            <table class="grid-wrapper"></table>
+        </div>
+    </div>
+    <div tab-fragment="3">
+        <div class="ui-iggrid-addrow-visible">
+            <table class="grid-wrapper"></table>
+        </div>
+        <br/>
+        <a id="outputResult" class="button-format"><span i18n="Calculate result"></span></a>
+    </div>
+    <div tab-fragment="4">
+        <p id="noResultMessage">No calculated result</p>
+    </div>
+</div>
